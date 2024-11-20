@@ -13,8 +13,6 @@ Se o Yarn 2 ainda não estiver configurado, inicialize no diretório do projeto:
 ```bash
 corepack enable
 yarn init -2
-yarn set version stable
-yarn install
 ```
 
 ---
