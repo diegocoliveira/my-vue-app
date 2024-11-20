@@ -4,6 +4,22 @@ Este é um projeto configurado para trabalhar com **Yarn 2 (Berry)**, **Vite**, 
 
 ---
 
+## **Criar Projeto**
+
+### 1. **Crie a pasta do projeto (se ainda não existir):** Caso a pasta my-vue-app não exista, crie-a com o comando:
+
+```bash
+mkdir my-vue-app
+```
+
+### 2. **Acesse a pasta do projeto:** Navegue até a pasta recém-criada:
+
+```bash
+cd my-vue-app
+```
+
+---
+
 ## **Configurações do Projeto**
 
 ### **1. Instalar Yarn 2 (Berry)**
@@ -13,6 +29,7 @@ Se o Yarn 2 ainda não estiver configurado, inicialize no diretório do projeto:
 ```bash
 corepack enable
 yarn init -2
+yarn config set nodeLinker pnp
 ```
 
 ---
@@ -22,13 +39,7 @@ yarn init -2
 Crie o projeto base:
 
 ```bash
-yarn create vite meu-projeto --template vue
-```
-
-Entre no diretório:
-
-```bash
-cd meu-projeto
+yarn create vite . --template vue
 ```
 
 ---
