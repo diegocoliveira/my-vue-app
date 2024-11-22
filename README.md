@@ -69,7 +69,7 @@ module.exports = {
 
 #### **3.3 Importar Tailwind no CSS**
 
-No arquivo `src/assets/main.css`, adicione:
+No arquivo `src/assets/tailwind.css`, adicione:
 
 ```css
 @tailwind base;
@@ -80,7 +80,20 @@ No arquivo `src/assets/main.css`, adicione:
 Importe o arquivo no `main.js`:
 
 ```javascript
-import "./assets/main.css";
+import "./assets/tailwind.css";
+```
+
+No arquivo `vite.config.js`, adicione:
+
+```javascript
+ css: {
+    postcss: {
+      plugins: [
+        tailwindcss(),
+        autoprefixer(),
+      ],
+    },
+  },
 ```
 
 ---
