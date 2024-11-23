@@ -51,3 +51,4 @@ coverage/
 
 # Outras exclusões
 *.tgz
+package-lock.json

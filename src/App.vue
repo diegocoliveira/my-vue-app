@@ -5,8 +5,14 @@ import HelloWorld from './components/HelloWorld.vue'
 <template>
   <div class="mockup-code">
     <pre data-prefix="$"><code>yarn add -D daisyui</code></pre>
-    <pre data-prefix=">" class="text-warning"><code>installing...</code></pre>
-    <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
+    <pre
+      data-prefix=">"
+      class="text-warning"
+    ><code>installing...</code></pre>
+    <pre
+      data-prefix=">"
+      class="text-success"
+    ><code>Done!</code></pre>
   </div>
   <HelloWorld msg=" Tailwind com daisyUI está funcionando!" />
 
@@ -15,5 +21,4 @@ import HelloWorld from './components/HelloWorld.vue'
       <p>Copyright © {{ new Date().getFullYear() }} - All right reserved by ZLPeT Ltd</p>
     </aside>
   </footer>
-
 </template>

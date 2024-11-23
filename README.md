@@ -157,26 +157,6 @@ Responda às perguntas:
 - **Which style guide do you want to follow?**: _Google_
 - **What format do you want your config file to be in?**: _JSON_
 
-Atualize o `.eslintrc.json`:
-
-```json
-{
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": ["eslint:recommended", "plugin:vue/vue3-recommended", "google"],
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "plugins": ["vue"],
-  "rules": {
-    "vue/multi-word-component-names": "off"
-  }
-}
-```
-
 ---
 
 ### **6. Iniciar o Projeto**
@@ -204,28 +184,6 @@ Abra o navegador no endereço exibido.
 ### **Para ESLint**
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-
-### **Outros**
-
-- [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
-
----
-
-## **Configurações Adicionais para VS Code**
-
-Adicione ao arquivo `settings.json` do VS Code:
-
-```json
-{
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "eslint.validate": ["javascript", "javascriptreact", "vue"],
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-}
-```
 
 ---
 
