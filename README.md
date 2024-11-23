@@ -103,7 +103,7 @@ No arquivo `vite.config.js`, adicione:
 #### **4.1 Instalar DaisyUI**
 
 ```bash
-yarn add daisyui
+yarn add -D daisyui
 ```
 
 #### **4.2 Configurar DaisyUI**
@@ -111,14 +111,19 @@ yarn add daisyui
 No arquivo `tailwind.config.js`:
 
 ```javascript
-module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+import daisyui from "daisyui";
+
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}", // Inclua arquivos Vue e JS/TS
+  ],
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui")],
+  plugins: [daisyui],
   daisyui: {
-    themes: ["light", "dark"], // Escolha os temas
+    themes: ["dark"], // Escolha os temas
   },
 };
 ```
